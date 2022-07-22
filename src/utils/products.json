@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Produto 2",
+    "value": 200,
+    "imageUrl": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 2,
+    "name": "Produto Legal",
+    "value": 123,
+    "imageUrl": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 3,
+    "name": "Produto 3",
+    "value": 30,
+    "imageUrl": "https://picsum.photos/200/200"
+  },
+  {
+    "id": 4,
+    "name": "Produto 4",
+    "value": 1000,
+    "imageUrl": "https://picsum.photos/200/200"
+  }
+]

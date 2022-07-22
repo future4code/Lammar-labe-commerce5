@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Filtro } from './Components/Filtro';
+import { Home } from './Components/Home';
+import products from './utils/products.json';
 
 function App() {
+  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [filter, setFilter] = useState({
+    name: '',
+    minValue: '',
+    maxValue: '',
+  });
+
+  useEffect(() => {
+    setFilteredProducts(products.filter(product => {
+      const nameCondition = product.name.toLowerCase().includes(filter.name.toLowerCase());
+      const minCondition = !filter.minValue || product.value >= +filter.minValue;
+      const maxCondition = !filter.maxValue || product.value <= +filter.maxValue;
+
+      return nameCondition && minCondition && maxCondition;
+    }));
+  }, [filter]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main
+      style={{
+        display: 'flex',
+        height: 'calc(100vh - 16px)',
+      }}
+    >
+      <Filtro setFilter={setFilter} />
+      <Home filter={filteredProducts} />
+    </main>
   );
 }
 
