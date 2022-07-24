@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   border: 1px solid black;
   margin-left: 20px;
+  margin-right: 20px;
   padding: 20px;
   width: 700px;
   overflow: auto;
