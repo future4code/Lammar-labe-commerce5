@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Filtro } from './Components/Filtro';
 import { Home } from './Components/Home';
+import { Carrinho } from './Components/Carrinho';
 import products from './utils/products.json';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     >
       <Filtro setFilter={setFilter} />
       <Home filter={filteredProducts} />
+      <Carrinho/>
     </main>
   );
 }
