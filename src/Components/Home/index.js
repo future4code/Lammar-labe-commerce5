@@ -31,6 +31,8 @@ export function Home({ filter }) {
         {filter.map(product => (
           <Product key={product.id} item={product} />
         ))}
+         <button id='buynow'> Compre agora!</button>
+
       </ItemsContainer>
     </Container>
   );
