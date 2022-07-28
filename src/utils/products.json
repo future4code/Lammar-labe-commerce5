@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "AstroBolha",
+    "value": 9,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-029-300x300.jpg"
+  },
+  {
+    "id": 2,
+    "name": "E.T - O Emplacado",
+    "value": 19,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-019-300x300.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gato das Galáxias",
+    "value": 28,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-021-300x300.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tudo sob controle",
+    "value": 55,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-018-300x300.jpg"
+  },
+  {
+    "id": 5,
+    "name": "ET - The Section",
+    "value": 127,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-026-300x300.jpg"
+  },
+  {
+    "id": 6,
+    "name": "O Manipulador",
+    "value": 220,
+    "imageUrl": "https://www.rockzclub.com.br/wp-content/uploads/2017/10/MR-031-300x300.jpg"
+  }
+]
